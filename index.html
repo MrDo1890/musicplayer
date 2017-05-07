@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Music Player</title>
+        <!--font-awesome-icon-->
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="function.js"></script>
+        <script src="docs/lrc/lrc.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo"></div>
+            <div>Music Player</div>
+        </header>
+        <div class="container">
+            <div class="list-bar">
+                <ul class="music-list">
+                    <li class="music"><i class="fa fa-music"></i>小星星 - 杨千嬅</li>
+                    <li class="music"><i class="fa fa-music"></i>给十年后的我 - 薛凯琪</li>
+                    <li class="music"><i class="fa fa-music"></i>月球上的人 - 陈奕迅</li>
+                    <li class="music"><i class="fa fa-music"></i>山丘 - 李宗盛</li>
+                    <li class="music"><i class="fa fa-music"></i>致少年时代 - 古巨基</li>
+                    <li class="music"><i class="fa fa-music"></i>情人 - Beyond</li>
+
+
+
+                </ul>
+                <div class="current-music-panel">
+                    <div>
+                        <img class="current-img" src="docs/cover/小星星-杨千嬅.jpg" alt="cover">
+                    </div>
+                    <div class="current-music">
+                        <div class="music-name">
+                            小星星
+                        </div>
+                        <div class="music-author">
+                            杨千嬅
+                        </div>
+                        <i class="fa fa-heart-o"></i>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="main scroll">
+                <div class="carousel">
+                    <span id="photo0" class="photo front" style="background-image: url(docs/pics/a.png)" data-index=0></span>
+                    <span id="photo1" class="photo left-back" style="background-image: url(docs/pics/b.png)" data-index=1></span>
+                    <span id="photo2" class="photo right-back" style="background-image: url(docs/pics/c.png)" data-index=2></span>
+                    <div class="carousel-indi">
+                        <div id="point0" class="carousel-indi-point activate" data-index=0></div>
+                        <div id="point1" class="carousel-indi-point" data-index=1></div>
+                        <div id="point2" class="carousel-indi-point" data-index=2></div>
+                    </div>
+                </div>
+                <div class="recommendation">
+                    <div class="recommendation-title">为你推荐</div>
+                    <div class="recommendation-list">
+                        <div>
+                            <img src="docs/pics/1.png" alt="">
+                            <p>DUO 陈奕迅演唱会(2010)</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/2.png" alt="">
+                            <p>【Eminem〗-精选</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/3.png" alt="">
+                            <p>四月最热新歌TOP50</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/4.png" alt="">
+                            <p>2017 Billboard音乐奖完整提名</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/5.png" alt="">
+                            <p>治愈钢琴｜伟大的时光和伟大的我们</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/6.png" alt="">
+                            <p>100首入耳就想单曲循环的粤语歌</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/7.png" alt="">
+                            <p>「节奏加速」持续匀速运动从这里开始</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/8.png" alt="">
+                            <p>敲好听的，日系夏日清新小调~</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/9.png" alt="">
+                            <p>如何在KTV唱哭全场</p>
+                        </div>
+                        <div>
+                            <img src="docs/pics/10.png" alt="">
+                            <p>你最美的样子都定格在了电影里</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="music-info-page">
+                    <div class="left-side">
+                        <img id="id-gan" class="gan-show"src="docs/gan.png" alt="">
+                        <div class="music-cd">
+                            <div class="rotated-cd">
+                                <img class="cd-cover" src="docs/cover/小星星-杨千嬅.jpg" alt="cd-cover">
+                            </div>
+                        </div>
+                        <div class="music-info">
+                            <div class="info-music-name">
+                                小星星-杨千嬅
+                            </div>
+                            <div class="info-buttons">
+                                <div class="fa fa-heart-o">喜欢</div>
+                                <div class="fa fa-star-o">收藏</div>
+                                <div class="fa fa-download">下载</div>
+                                <div class="fa fa-share-square-o">分享</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="lrc scroll">
+                            作曲：陈辉阳@好好笑<br>
+                            作词：林夕<br>
+                            <br>
+                            当天应该得7岁<br>我想喝妈妈的汽水<br>
+                            把它抢在掌心里 <br>大人无法迫我睡<br>
+                            <br>
+                            他跟她今天竟饮醉 <br>我想抢的不止汽水<br>
+                            输光自尊也斗下去 <br>压力大得欲望都失去<br>
+                            <br>
+                            一闪一闪小星星 <br>开开心心的唱诗<br>
+                            但为何一毕业才知 <br>一世我也要考试<br>
+                            <br>
+                            谁也好 <br>即使爱侣都没有必要待我好<br>
+                            甜辣酸苦都一样当宝 <br>谁亦会计数<br>
+                            牺牲才得到的快乐 <br>亦没什么味道<br>
+                            难怪我双肋插了刀 <br>为博他答谢也好<br>
+                            仍没法开心得这样早 <br>谁愿欠我一世人间散步<br>
+                            善良人永远天真到 <br>做好心不信得恶报<br>
+                            <br>
+                            终于都跟他分手了 <br>我开过的心不算少<br>
+                            今天起睡得够最重要 <br>以后幸福亦未必敢笑<br>
+                            <br>
+                            谁也好 <br>即使爱侣都没有必要待我好<br>
+                            甜辣酸苦都一样当宝 <br>谁亦会计数<br>
+                            牺牲才得到的快乐 <br>亦没什么味道<br>
+                            难怪我双肋插了刀 <br>为博他答谢也好<br>
+                            仍没法开心得这样早 <br>谁愿欠我一世人间散步<br>
+                            善良人永远天真到 <br>做好心不信得恶报<br>
+                            一闪一闪小星星 <br>简简单单一辈子<br>
+                            就从头到尾哼一次 <br>忘记智商去做人都愿意
+                        </div>
+                    </div>
+                </div>
+            <audio id="id-audio" src="docs/mp3/小星星-杨千嬅.mp3"></audio>
+        </div>
+        <footer class="control-bar">
+            <div class="music-control">
+                <div class="fa fa-step-backward fa-lg"></div>
+                <div class="fa fa-play fa-lg"></div>
+                <div class="fa fa-step-forward fa-lg"></div>
+            </div>
+            <div class="time-bar">
+                <div class="current-time">
+                    00:00
+                </div>
+                <div class="time-range">
+                    <input type="range" value="0">
+                </div>
+                <div class="duration-time">
+                    00:00
+                </div>
+            </div>
+            <div class="vol-control">
+                <div class="mode order" data-mode="0"></div>
+                <div id="id-vol" class="fa fa-volume-up fa-lg"></div>
+                <div id="id-vol-range">
+                    <input type="range" value="0">
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+</html>
