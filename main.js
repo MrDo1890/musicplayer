@@ -314,11 +314,12 @@ function lpbo(){
 }
 //轮播图 END
 
-function init(){
+function __main(){
     lpbo()
     e("body").style.height = window.innerHeight + "px"
     e(".main").style.width = (window.innerWidth - 250) + 'px'
     control_init()
     list_init()
 }
-window.onload = init
+
+__main()
