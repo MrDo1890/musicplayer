@@ -29,7 +29,6 @@ header div{
 }
 .container{
     position: relative;
-    height: 674px;
     overflow: hidden;
 }
 /*list-bar-start*/
@@ -37,7 +36,8 @@ header div{
     position: absolute;
     top: 0;
     left: 0;
-    width: 249px;
+    width: 15vw;
+    min-width: 190px;
     height: 100%;
     background-color:  #1c1c1e;
     color: #bbb;
@@ -62,10 +62,10 @@ header div{
 
 .current-music-panel {
     height: 80px;
-    width: 250px;
+    width: 100%;
     border-top: 1px solid #333;
     position: absolute;
-    bottom: 60px;
+    bottom: 0;
     display: flex;
 }
 .current-img {
@@ -102,9 +102,9 @@ header div{
 .main {
     position: absolute;
     top: 0;
-    left: 250px;
-    height: 615px;
-    min-width: 1000px;
+    left: 15%;
+    height: 100%;
+    width: 85%;
     background-color: #16181C;
 }
 .recommendation {
@@ -140,9 +140,9 @@ header div{
 }
 .music-info-page {
     position: absolute;
-    left: 250px;
+    left: 15%;
     bottom: 0;
-    right: 0;
+    /*right: 0;*/
     width: 0;
     height: 0;
     background-color: #16181C;
@@ -150,8 +150,8 @@ header div{
     visibility: hidden;
 }
 .info-show {
-    width: 1286px;
-    height: 674px;
+    width: 85%;
+    height: 100%;
     visibility: visible;
 }
 .left-side {
@@ -265,16 +265,19 @@ header div{
     background-color: #232326;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .music-control{
-    width: 250px;
+    width: 15vw;
     display: inline-flex;
     justify-content: space-around;
+    min-width: 130px;
 }
 .music-control div{
     width: 36px;
     height: 36px;
-    margin: 10px 20px;
+    margin: 10px 0;
     color: #bbb;
     border: 2px solid ;
     text-align: center;
@@ -288,6 +291,7 @@ header div{
 
 .time-bar {
     margin-left: 10px;
+    width: 68%;
     display: inline-flex;
 }
 .current-time, .duration-time {
@@ -297,14 +301,10 @@ header div{
     margin: 0 10px;
 }
 .time-range {
-    width: 900px;
+    width: 88%;
     height: 16px;
     margin: 17px 0 27px 0;
 }
-
-
-
-
 .vol-control {
     display: inline-flex;
     float: right;
@@ -370,7 +370,7 @@ header div{
 /*control-bar-end*/
 /*carousel-start*/
 .carousel {
-    width: 100%;
+    width: 95%;
     height: 350px;
     margin: 0 auto;
     perspective: 300px;
@@ -379,10 +379,10 @@ header div{
     position: relative;
 }
 .photo {
-    display: inline-block;
+    /*display: inline-block;*/
     position: absolute;
     top: 30px;
-    left: 355px;
+    left: 26.3%;
     width: 584px;
     height: 268.8px;
     transition: all 1s;

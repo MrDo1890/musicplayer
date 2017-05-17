@@ -317,9 +317,8 @@ function lpbo(){
 function __main(){
     lpbo()
     e("body").style.height = window.innerHeight + "px"
-    e(".main").style.width = (window.innerWidth - 250) + 'px'
+    e(".container").style.height = (window.innerHeight - 120) + "px"
     control_init()
     list_init()
 }
-
 __main()
